@@ -1,0 +1,19 @@
+Beginner
+
+1. Random Number Generator (Done)
+2. Word Frequency (Done)
+3. Countdown Timer (Done)
+4. Calculator (Done)
+5. Weather App (Done)
+6. Notes App
+
+Intermediate
+
+1. Card Memory Game (Done)
+2. Drawing App
+
+Advanced
+
+1. Real-time chat interface
+2. Instagram Clone
+3. Simple Online Store

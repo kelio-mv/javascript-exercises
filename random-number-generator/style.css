@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 200, 255), rgb(0, 150, 255));
+    color: white;
+    font-family: 'Gantari', sans-serif;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+div.main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 700px;
+    height: 200px;
+    margin: auto;
+}
+
+div.main div.input {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+input {
+    width: 31%;
+    padding: 7px 15px;
+    background-color: rgb(0, 0, 0, 0);
+    border: 2px solid white;
+    border-radius: 100vw;
+    outline: none;
+    color: white;
+    font-size: 20px;
+}
+
+input[type="button"] {
+    background-color: rgb(0, 150, 255);
+    cursor: pointer;
+}
+
+div.main div.generated p {
+    visibility: hidden;
+    text-align: center;
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(90, 180, 90), rgb(60, 120, 60));
+    font-family: 'Gantari';
+    color: white;
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+}
+
+div.main h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+div.main p {
+    text-align: center;
+}
+
+div.input-and-output {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 80%;
+}
+
+textarea.input,
+div.output {
+    width: 49%;
+    height: 100%;
+    overflow: auto;
+}
+
+textarea.input {
+    padding: 5px;
+    background-color: rgb(0, 0, 0, 0);
+    font-family: 'Gantari';
+    font-size: 16px;
+    color: white;
+    border: solid 2px white;
+    outline: none;
+    resize: none;
+}
+
+table.output {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0px;
+}
+
+table.output th,
+table.output td {
+    width: 50%;
+    height: 35px;
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: solid 1px white;
+}

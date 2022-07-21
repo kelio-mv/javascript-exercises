@@ -1,0 +1,35 @@
+div#main {
+    height: 73%;
+    padding: 20px;
+    overflow: auto;
+}
+
+div.note {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+div.note:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+}
+
+div.note * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+a.btn {
+    font-size: 36px;
+}

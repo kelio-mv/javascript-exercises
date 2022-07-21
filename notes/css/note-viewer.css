@@ -1,0 +1,33 @@
+input#title {
+    font-family: 'Gantari';
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 5px 0px;
+}
+
+textarea#content {
+    height: 65%;
+    padding: 15px;
+    font-size: 20px;
+    resize: none;
+}
+
+div.buttons {
+    display: flex;
+}
+
+div.btn-container {
+    display: none;
+    padding: 10px 15px;
+    margin: 0px 15px;
+    border-radius: 100vw;
+}
+
+div#delete-btn a {
+    color: rgb(192, 0, 0)
+}
+
+div#cancel-btn a {
+    color: rgb(240, 90, 45)
+}
