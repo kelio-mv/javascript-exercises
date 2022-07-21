@@ -5,7 +5,7 @@ Beginner
 3. Countdown Timer (Done)
 4. Calculator (Done)
 5. Weather App (Done)
-6. Notes App
+6. Notes App (Done)
 
 Intermediate
 
