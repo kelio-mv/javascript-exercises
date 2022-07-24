@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gantari', sans-serif;
+    background-color: #eee;
+}
+
+/* ----------------------------------- Header ----------------------------------- */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+header .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    height: 60px;
+    margin: auto;
+}
+
+header .main-container div {
+    flex-basis: 30%;
+}
+
+header #search-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #eee;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+header #search-container img {
+    height: 16px;
+}
+
+header #search-container input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Gantari', sans-serif;
+    font-size: 16px;
+}
+
+header #buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header #buttons-container img {
+    height: 24px;
+}
+
+/* ----------------------------------- Main container ----------------------------------- */
+
+section.main {
+    display: flex;
+    gap: 40px;
+    width: fit-content;
+    margin: auto;
+    padding-top: 90px;
+}
+
+section.left {
+    width: 470px;
+}
+
+section.right {
+    width: 350px;
+}
+
+/* ----------------------------------- Status & Post ----------------------------------- */
+
+.post,
+#status-area {
+    margin-bottom: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* ----------------------------------- Status ----------------------------------- */
+
+#status-area {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.status div.user-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to top right, yellow, magenta);
+    border-radius: 50%;
+}
+
+.status img {
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    object-fit: cover;
+}
+
+/* ----------------------------------- Post ----------------------------------- */
+
+.post .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.post .header .author {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.post .header .author img {
+    height: 32px;
+}
+
+.post .header .options {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.post .image img {
+    max-width: 100%;
+}
+
+.post .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.post .actions {
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+}
+
+.post .actions img {
+    height: 100%;
+}
+
+.post .actions .left {
+    display: flex;
+    gap: 15px;
+}
+
+.post .description {
+    display: flex;
+    gap: 10px;
+}
+
+.post .description .author {
+    font-weight: bold;
+}
+
+.post .time {
+    color: gray;
+    font-size: 11px;
+}
+
+/* ----------------------------------- Change user ----------------------------------- */
+
+.change-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.change-user .user {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.change-user .user img {
+    width: 56px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.change-user .user .user-nick {
+    font-weight: bold;
+}
+
+.change-user .user .user-name {
+    color: #999;
+}
+
+.change-user .change-btn {
+    text-decoration: none;
+    color: rgb(34, 164, 246)
+}
+
+/* ----------------------------------- Suggestions ----------------------------------- */
+
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.suggestions .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestions .header .left {
+    color: gray;
+    font-weight: bold;
+}
+
+.suggestions .header .right {
+    color: black;
+    text-decoration: none;
+}
+
+.suggestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestion .user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.suggestion .user img {
+    width: 32px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.suggestion .user .name .reason {
+    color: #999;
+}
+
+.suggestion .follow-btn {
+    text-decoration: none;
+    color: rgb(34, 164, 246)
+}
+
+/* ----------------------------------- Links ----------------------------------- */
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.links a {
+    font-size: 15px;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.links .separator {
+    width: 4px;
+}
+
+/* ----------------------------------- Copyright ----------------------------------- */
+
+p.copyright {
+    font-size: 15px;
+    color: #bbb;
+}
+
+/* ----------------------------------- Hover property ----------------------------------- */
+
+header h1,
+header img,
+#status-area .status,
+.post .header *,
+.post .actions img,
+.post .description .author,
+.change-user img,
+.change-user .user-nick,
+.suggestion img,
+.suggestion .user-nick {
+    cursor: pointer;
+}
+
+/* ----------------------------------- Media queries ----------------------------------- */
+
+@media screen and (max-width:1000px) {
+    header {
+        padding: 0px 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    section.right {
+        display: none;
+    }
+}
+
+@media screen and (max-width:750px) {
+    header #search-container {
+        display: none;
+    }
+
+    header .main-container div {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    section.left {
+        padding: 0px 10px;
+    }
+}
