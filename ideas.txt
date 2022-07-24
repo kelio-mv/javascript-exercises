@@ -6,7 +6,5 @@
 6. Notes App (Done)	
 7. Card Memory Game (Done)
 8. Drawing App (Done)
-
+9. Instagram Clone (Done)
 9. Real-time chat interface
-10. Instagram Clone
-11. Simple Online Store
