@@ -8,7 +8,7 @@ export class Network {
     }
 
     connect(ipAddress, port) {
-        this.address = `wss://${ipAddress}:${port}`
+        this.address = `ws://${ipAddress}:${port}`
         this.socket = new WebSocket(this.address)
         this.socket.onopen = this.onopen.bind(this)
         this.socket.onmessage = this.onmessage.bind(this)
