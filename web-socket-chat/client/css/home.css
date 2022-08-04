@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+    background-color: rgb(20,20,20);
+    font: 18px 'Gantari', sans-serif;
+    color: white;
+}
+
+input {
+    padding: 10px 15px;
+    background-color: rgb(32,32,32);
+    color: white;
+    border: 1px solid rgb(48,48,48);
+    border-radius: 8px;
+    font: 18px 'Gantari', sans-serif;
+}
+
+.server-address {
+    display: flex;
+    gap: 15px;
+}
+
+.server-address .ip-address {
+    width: 200px;
+}
+
+.server-address .port {
+    width: 100px;
+}
+
+.username {
+    width: 315px;
+}
+
+.join {
+    cursor: pointer;
+}
